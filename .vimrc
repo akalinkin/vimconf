@@ -1,6 +1,8 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 set number                    " show line numbers
+set laststatus=2              " allways show status line
+set ruler                     " show line and col position
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim

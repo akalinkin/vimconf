@@ -1,8 +1,19 @@
 # vimconf
 My VIM config
-Keep your config ion github and use it on any workstation/laptop/server/etc.
+
+Keep your configiton github and use it on any workstation/laptop/server/etc.
 
 ## Using config
+
+### Prerequisites
+
+Install Vundle (Vim plugin manager)
+
+```bash
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+```
+
+### Setup
 
 Clone your config to some place on your device
 
