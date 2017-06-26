@@ -56,7 +56,7 @@ scriptencoding utf-8
 set encoding=utf-8
 
 set listchars+=space:·
-set listchars=eol:¶,tab:»·,trail:~,extends:>,precedes:<,space:·
+set listchars=eol:¶,tab:⇥·,trail:~,extends:>,precedes:<,space:·
 augroup setList
 	au!
 	au BufWinEnter *  set list
