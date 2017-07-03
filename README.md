@@ -28,6 +28,16 @@ Create symlink to your local config folder
 ln -sf /absolute/path/to/your/git/repo/.vimrc ~/.vimrc
 ```
 
+Open VIM and install plugins
+
+```bash
+vim
+```
+
+```
+:PluginInstall
+```
+
 That's it! 
 Start vim
 
