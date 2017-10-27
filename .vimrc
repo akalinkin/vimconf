@@ -1,3 +1,11 @@
+"
+" My VIM config
+"
+" Author: Alex Kalinkin 
+" Email: alex@kalinkin.info
+" Source: https://github.com/akalinkin/vimconf
+"
+
 set nocompatible              " be iMproved, required
 filetype off                  " required
 set number                    " show line numbers
@@ -46,10 +54,14 @@ set path=$PWD/**
 au VimEnter * NERDTree
 " Show hidden files in tree
 let NERDTreeShowHidden=1
+" Close NerdTree when open file
+let NERDTreeQuitOnOpen = 1
+" Auto close tab if the only remaining window is NerdTree (Not works)
+""" autocmd bufenter * if (winnr(“$”) == 1 && exists(“b:NERDTreeType”) && b:NERDTreeType == “primary”) | q | endif
 
-" Csortcut for NERDTree = 'ne
+" Csortcut for NERDTree = 'e
 let mapleader = ","
-nmap <leader>ne :NERDTree<cr>
+map <leader>e :NERDTreeToggle<CR>
 
 " Set non-printable chars visible
 scriptencoding utf-8
@@ -64,3 +76,5 @@ augroup END
 
 " For *.sol (Solidity SmartContracts) Set tabstop=4, shiftwidth=4, expandtab
 au BufEnter *.sol set sw=4 ts=4 et
+" Requires Quramy/tsuquyomi bundle
+" autocmd FileType typescript setl omnifunc=tsuquyomi#complete
