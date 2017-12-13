@@ -31,6 +31,7 @@ Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 " Solidity language (Ethereum smart contracts)
 Plugin 'tomlion/vim-solidity'
+Plugin 'editorconfig/editorconfig-vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
