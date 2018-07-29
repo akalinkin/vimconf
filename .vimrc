@@ -9,6 +9,7 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 set number                    " show line numbers
+set relativenumber            " Show relative line numbers
 set laststatus=2              " allways show status line
 set ruler                     " show line and col position
 
